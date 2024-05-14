@@ -25,7 +25,7 @@ Download ```segment-anything-main.zip``` locally, unzip it and ```python setup.p
 2、OS-dataset. 
  
 ## Testing and visualisation
-The weights have been uploaded to the folder ./weights
+The weights will be uploaded to the folder ./weights
 ```shell script
 python main.py
 ```
