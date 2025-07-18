@@ -62,7 +62,7 @@ if __name__ == "__main__":
     config = {'detector': {'nms_radius': 3, 'keypoint_threshold': 0.005, 'max_keypoints': 3000, 'remove_borders': 4, 'cuda': 1},
               'matcher': {'sinkhorn_iterations': 120, 'match_threshold': 0.4, 'cuda': 1}}
     kernel = 3
-    risg = Matcher(config)
+    sfanet = Matcher(config)
 
     sam = sam_model_registry["default"](checkpoint=".\weights/sam_vit.pth").to(device="cuda")
     sam = SamAutomaticMaskAndProbabilityGenerator(sam)
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     print('*  Load model complete...')
 
     t0 = time.perf_counter()
-    nim, mmkpts0, mmkpts1, Affine = matches(img0,img1,risg,sam,kernel,edge_detection)
+    nim, mmkpts0, mmkpts1, Affine = matches(img0,img1,sfanet,sam,kernel,edge_detection)
     t1 = time.perf_counter()
 
 
