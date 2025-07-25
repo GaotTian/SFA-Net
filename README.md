@@ -20,6 +20,10 @@ os
 where segment_anything needs to be installed separately
 Download ```segment-anything-main.zip``` locally, unzip it and ```python setup.py install``` it. Or ```pip install git+https://github.com/facebookresearch/segment-anything.git```
 
+## Weights
+We provide our pre-trained model in [download link](https://drive.google.com/drive/folders/12rKhhaM-gsc_X7-hWYE53O930BaMz7dI?usp=sharing)
+
+
 ## Dataset
 1、Megadepth.
 2、OS-dataset. 
