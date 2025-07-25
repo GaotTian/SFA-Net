@@ -1,6 +1,6 @@
 # SFA-Net: A SAM-guided Focused Attention Network for Multimodal Remote Sensing Image Matching
 
-Tian Gao, Chaozhen Lan*, Wenjun Huang, Sheng Wang, Zijun Wei, Fushan Yao, Longhao Wang
+Tian Gao, Chaozhen Lan*, Wenjun Huang, Sheng Wang
 
 ## Framework
 ![img](https://github.com/GaotTian/SFA-Net/blob/main/framework.png)
