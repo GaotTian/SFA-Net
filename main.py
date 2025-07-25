@@ -52,8 +52,8 @@ def showAndsaveMatches(points0, points1, img0, img1,windowname, flag,textflag,te
 
 if __name__ == "__main__":
     i = 3 # 44 46
-    img_filename0 = 'E:\gitupdate\SFA-Net/usedata/infrared-infrared/{}-1.jpg'.format(i)
-    img_filename1 = 'E:\gitupdate\SFA-Net/usedata/infrared-infrared/{}-2.jpg'.format(i)
+    img_filename0 = 'E:\SFA-Net/usedata/infrared-infrared/{}-1.jpg'.format(i)
+    img_filename1 = 'E:\SFA-Net/usedata/infrared-infrared/{}-2.jpg'.format(i)
 
     img0 = cv2.imread(img_filename0)
     img1 = cv2.imread(img_filename1)
