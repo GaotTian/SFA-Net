@@ -1,6 +1,6 @@
 # SFA-Net: A SAM-guided Focused Attention Network for Multimodal Remote Sensing Image Matching
 
-Tian Gao, Chaozhen Lan*, Wenjun Huang, Sheng Wang
+Tian Gao, Chaozhen Lan*, Wenjun Huang, Sheng Wang, Zijun Wei, Fushan Yao, Longhao Wang
 
 ## Framework
 ![img](https://github.com/GaotTian/SFA-Net/blob/main/framework.png)
@@ -25,7 +25,7 @@ Download ```segment-anything-main.zip``` locally, unzip it and ```python setup.p
 2、OS-dataset. 
  
 ## Testing and visualisation
-The weights will be uploaded to the folder ./weights
+The weights have been uploaded to the folder ./weights
 ```shell script
 python main.py
 ```

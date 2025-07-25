@@ -52,8 +52,8 @@ def showAndsaveMatches(points0, points1, img0, img1,windowname, flag,textflag,te
 
 if __name__ == "__main__":
     i = 3 # 44 46
-    img_filename0 = 'D:/code_gt/SFA-Net/usedata/infrared-infrared/{}-1.jpg'.format(i)
-    img_filename1 = 'D:/code_gt/SFA-Net/usedata/infrared-infrared/{}-2.jpg'.format(i)
+    img_filename0 = 'E:\gitupdate\SFA-Net/usedata/infrared-infrared/{}-1.jpg'.format(i)
+    img_filename1 = 'E:\gitupdate\SFA-Net/usedata/infrared-infrared/{}-2.jpg'.format(i)
 
     img0 = cv2.imread(img_filename0)
     img1 = cv2.imread(img_filename1)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     config = {'detector': {'nms_radius': 3, 'keypoint_threshold': 0.005, 'max_keypoints': 3000, 'remove_borders': 4, 'cuda': 1},
               'matcher': {'sinkhorn_iterations': 120, 'match_threshold': 0.4, 'cuda': 1}}
     kernel = 3
-    sfanet = Matcher(config)
+    risg = Matcher(config)
 
     sam = sam_model_registry["default"](checkpoint=".\weights/sam_vit.pth").to(device="cuda")
     sam = SamAutomaticMaskAndProbabilityGenerator(sam)
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     print('*  Load model complete...')
 
     t0 = time.perf_counter()
-    nim, mmkpts0, mmkpts1, Affine = matches(img0,img1,sfanet,sam,kernel,edge_detection)
+    nim, mmkpts0, mmkpts1, Affine = matches(img0,img1,risg,sam,kernel,edge_detection)
     t1 = time.perf_counter()
 
 
