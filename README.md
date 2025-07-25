@@ -22,7 +22,7 @@ Download ```segment-anything-main.zip``` locally, unzip it and ```python setup.p
 
 ## Weights
 We provide our pre-trained model in [download link](https://drive.google.com/drive/folders/12rKhhaM-gsc_X7-hWYE53O930BaMz7dI?usp=sharing)
-
+After downloading the weight files, just put it in the ./weights folder.
 
 ## Dataset
 1、Megadepth.
